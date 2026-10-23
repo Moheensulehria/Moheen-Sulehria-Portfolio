@@ -1,0 +1,13 @@
+{
+  "name": "Moheen Sulehria",
+  "title": "Software Engineer",
+  "tagline": "Every type of work related to me will be done with excellency.",
+  "education": "BS Computer Engineering Technology",
+  "email": "moheensulehria@gmail.com",
+  "github": "https://github.com/Moheensulehria",
+  "linkedin": "https://www.linkedin.com/in/moheen-sulehria-480338405/",
+  "skills": ["HTML", "CSS", "JavaScript", "React", "C#", "C++", "Python"],
+  "sdlcTitle": "Software Development Life Cycle (SDLC)",
+  "sdlcDescription": "An AI-assisted project workflow concept intended to help coordinate work across a project lifecycle from one place. The goal is to reduce repetitive steps and support teams from planning through delivery.",
+  "lastUpdated": "2026-10-23"
+}
