@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="Moheen Sulehria — Software Engineer building polished, practical digital experiences.">
+  <title>Moheen Sulehria | Software Engineer</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body class="theme-dark">
+  <div id="loader" class="loader" aria-label="Loading portfolio"><div class="loader-mark">MS<span>.</span></div><div class="loader-track"><i></i></div><p>BUILDING SOMETHING EXCELLENT</p></div>
+  <div class="progress" id="progress"></div>
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <div class="ambient ambient-one" aria-hidden="true"></div><div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Moheen Sulehria home"><span class="brand-mark">M<span>.</span></span><span class="brand-name">MOHEEN SULEHRIA</span></a>
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation"><span></span><span></span></button>
+    <nav id="nav-links" class="nav-links" aria-label="Main navigation">
+      <a href="#home" class="active">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#journey">Journey</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions"><button id="theme-toggle" class="icon-btn" type="button" aria-label="Switch to light theme" title="Toggle theme">☼</button><a class="header-cta" href="#contact">Let's talk <span>↗</span></a></div>
+  </header>
+
+  <main>
+    <section id="home" class="hero section-shell">
+      <div class="hero-copy reveal">
+        <div class="availability"><span class="status-dot"></span> SOFTWARE ENGINEER · OPEN TO OPPORTUNITIES</div>
+        <p class="eyebrow">ENGINEERING IDEAS INTO REALITY</p>
+        <h1>Moheen<br><span class="gold-text">Sulehria.</span></h1>
+        <div class="role-line"><span class="terminal-symbol">&gt;_</span><span id="typed-role">Software Engineer</span><span class="typing-caret"></span></div>
+        <p class="hero-description" id="hero-tagline">Every type of work related to me will be done with excellency.</p>
+        <div class="hero-actions"><a class="button button-gold" href="#projects">Explore my work <span>↘</span></a><a class="button button-outline" href="assets/Moheen_Sulehria_Resume.pdf" download>Download résumé <span>↓</span></a></div>
+        <div class="hero-meta"><span><b>01</b> CREATIVE THINKING</span><span><b>02</b> CLEAN EXECUTION</span><span><b>03</b> CONTINUOUS LEARNING</span></div>
+      </div>
+      <div class="hero-stage reveal" aria-label="Animated 3D gold geometric object">
+        <div class="stage-orbit orbit-a"></div><div class="stage-orbit orbit-b"></div><div class="stage-orbit orbit-c"></div>
+        <div class="stage-core"><div class="core-inner">MS<span>.</span></div></div>
+        <div class="float-label label-code"><span>⌘</span> BUILD / CREATE</div><div class="float-label label-stack">HTML · CSS · JS</div><div class="float-label label-status"><i></i> AVAILABLE TO BUILD</div>
+        <div class="stage-caption">DIGITAL CRAFT · 2026</div>
+      </div>
+      <a class="scroll-cue" href="#about"><span class="scroll-line"></span> SCROLL TO DISCOVER</a>
+    </section>
+
+    <section id="about" class="section-shell section-block">
+      <div class="section-heading reveal"><p class="eyebrow">01 / A LITTLE ABOUT ME</p><h2>Driven by curiosity.<br><span class="gold-text">Defined by execution.</span></h2></div>
+      <div class="about-grid">
+        <div class="portrait-card reveal"><div class="portrait-frame"><div class="portrait-placeholder" id="portrait-placeholder"><span>MS</span><small>PORTRAIT GOES HERE</small></div><img id="profile-photo" src="assets/images/moheen.jpg" alt="Portrait of Moheen Sulehria" hidden></div><div class="portrait-bottom"><span>MOHEEN SULEHRIA</span><span>SOFTWARE ENGINEER</span></div><div class="portrait-glow"></div></div>
+        <div class="about-content reveal"><p class="large-copy">I’m <span class="gold-text">Moheen Sulehria</span>, a Computer Engineering Technology student who enjoys turning ideas into useful, thoughtful software.</p><p>I work across web technologies and programming languages, with an interest in building products that feel clear to use and dependable behind the scenes. I value curiosity, continuous improvement, and doing the work with excellence.</p><p class="education-line"><span class="education-icon">✳</span><span><small>EDUCATION</small><strong id="education-text">BS Computer Engineering Technology</strong></span></p><div class="about-stats"><div><strong>01<span>+</span></strong><small>IDEAS TO EXPLORE</small></div><div><strong>∞</strong><small>ROOM TO IMPROVE</small></div><div><strong>100<span>%</span></strong><small>COMMITMENT TO CRAFT</small></div></div><p class="small-note">Stats are design statements, not verified employment or project metrics.</p></div>
+      </div>
+    </section>
+
+    <section id="skills" class="section-shell section-block skills-section">
+      <div class="section-heading reveal"><p class="eyebrow">02 / MY TOOLKIT</p><h2>Tools for turning<br><span class="gold-text">ideas into impact.</span></h2><p class="section-intro">A growing toolkit across programming, web development, and software engineering.</p></div>
+      <div class="skills-layout"><div class="skill-orbit reveal"><div class="skill-orbit-ring ring-one"></div><div class="skill-orbit-ring ring-two"></div><div class="skill-orbit-center">CODE<span>✳</span></div><span class="orbit-tag tag-html">HTML</span><span class="orbit-tag tag-css">CSS</span><span class="orbit-tag tag-js">JS</span><span class="orbit-tag tag-py">PY</span><span class="orbit-tag tag-cpp">C++</span></div>
+        <div class="skill-groups" id="skill-groups"><article class="skill-group reveal"><div class="skill-group-top"><span>01</span><h3>Web development</h3><b>↗</b></div><div class="skill-chips"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span></div><div class="skill-meter"><i style="--meter:82%"></i></div></article><article class="skill-group reveal"><div class="skill-group-top"><span>02</span><h3>Programming</h3><b>↗</b></div><div class="skill-chips"><span>Python</span><span>C#</span><span>C++</span></div><div class="skill-meter"><i style="--meter:72%"></i></div></article><article class="skill-group reveal"><div class="skill-group-top"><span>03</span><h3>Engineering mindset</h3><b>↗</b></div><div class="skill-chips"><span>Problem solving</span><span>UI implementation</span><span>Learning APIs</span></div><div class="skill-meter"><i style="--meter:76%"></i></div></article></div>
+      </div><p class="small-note reveal">Skill meters are visual decoration, not formal proficiency ratings. Technologies listed are based on information provided by Moheen.</p>
+    </section>
+
+    <section id="projects" class="section-shell section-block">
+      <div class="section-heading projects-heading reveal"><div><p class="eyebrow">03 / SELECTED WORK</p><h2>Ideas made <span class="gold-text">tangible.</span></h2></div><p class="section-intro">A selection of work in progress and concepts. Explore the details and follow the development as each project evolves.</p></div>
+      <div class="project-tools reveal"><label class="search-box"><span>⌕</span><input id="project-search" type="search" placeholder="Search projects or technologies…" aria-label="Search projects"></label><div class="filter-row" id="project-filters"><button class="filter-chip active" data-filter="all">All work</button><button class="filter-chip" data-filter="web">Web</button><button class="filter-chip" data-filter="software">Software</button><button class="filter-chip" data-filter="ai">AI / Automation</button></div></div>
+      <div class="project-grid" id="project-grid">
+        <article class="project-card reveal" data-category="software ai" data-search="software development life cycle sdlc ai automation project management"><div class="project-visual visual-sdlc"><span class="project-number">01 / CONCEPT</span><div class="workflow-visual"><span>PLAN</span><i>→</i><span>BUILD</span><i>→</i><span>SHIP</span></div><div class="visual-orb"></div></div><div class="project-card-body"><div class="project-card-meta"><span>SOFTWARE · AI</span><span class="status-pill">IN DEVELOPMENT</span></div><h3>Software Development Life Cycle <span class="gold-text">(SDLC)</span></h3><p>An AI-assisted project workflow concept intended to help coordinate work across a project lifecycle from one place. The goal is to reduce repetitive steps and support teams from planning through delivery.</p><div class="project-tags"><span>AI concept</span><span>Workflow</span><span>Software engineering</span></div><div class="project-card-footer"><span class="project-note">Project details will grow as implementation progresses.</span><a href="mailto:moheensulehria@gmail.com?subject=SDLC%20project%20enquiry" aria-label="Ask about the SDLC project">Discuss project ↗</a></div></div></article>
+        <article class="project-card reveal" data-category="web" data-search="portfolio website three js html css javascript 3d animation"><div class="project-visual visual-portfolio"><span class="project-number">02 / PERSONAL</span><div class="mini-browser"><div class="browser-dots"><i></i><i></i><i></i></div><div class="browser-lines"><b></b><span></span><span></span><strong></strong></div><div class="browser-sphere"></div></div><div class="visual-orb"></div></div><div class="project-card-body"><div class="project-card-meta"><span>WEB · INTERACTIVE</span><span class="status-pill status-live">PORTFOLIO</span></div><h3>Personal Portfolio</h3><p>A responsive developer portfolio with an animated 3D-inspired visual system, theme switching, searchable projects, and a content-management workflow.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Three.js</span></div><div class="project-card-footer"><span class="project-note">You are viewing this project.</span><a href="#home">Back to top ↗</a></div></div></article>
+      </div><p id="no-projects" class="no-results" hidden>No projects match that search. Try a different keyword or filter.</p>
+    </section>
+
+    <section id="github-work" class="section-shell section-block github-section"><div class="section-heading projects-heading reveal"><div><p class="eyebrow">GITHUB / OPEN SOURCE</p><h2>Code in <span class="gold-text">the open.</span></h2></div><p class="section-intro">Recent public repositories from my GitHub profile. Repository data is loaded live from GitHub when available.</p></div><div id="github-repos" class="repo-grid"><p class="repo-loading">Loading public repositories…</p></div><p class="repo-footnote">Repository details are supplied by GitHub's public API. Featured portfolio projects above are curated separately.</p></section>
+
+    <section id="github-work" class="section-shell section-block github-section"><div class="section-heading projects-heading reveal"><div><p class="eyebrow">GITHUB / OPEN SOURCE</p><h2>Code in <span class="gold-text">the open.</span></h2></div><p class="section-intro">Recent public repositories from my GitHub profile. Repository data is loaded live from GitHub when available.</p></div><div id="github-repos" class="repo-grid"><p class="repo-loading">Loading public repositories…</p></div><p class="repo-footnote">Repository details are supplied by GitHub's public API. Featured portfolio projects above are curated separately.</p></section>
+
+    <section id="journey" class="section-shell section-block journey-section"><div class="section-heading reveal"><p class="eyebrow">04 / THE JOURNEY</p><h2>Always learning.<br><span class="gold-text">Always building.</span></h2></div><div class="journey-list reveal"><article><span class="journey-index">01</span><div><small>EDUCATION</small><h3>Computer Engineering Technology</h3><p>Building a foundation in engineering and software development.</p></div><span class="journey-arrow">↗</span></article><article><span class="journey-index">02</span><div><small>CURRENT FOCUS</small><h3>Building practical projects</h3><p>Practising with web technologies and programming languages while developing project ideas.</p></div><span class="journey-arrow">↗</span></article><article><span class="journey-index">03</span><div><small>NEXT CHAPTER</small><h3>Creating useful software</h3><p>Continuing to improve, collaborate, and turn ambitious concepts into dependable products.</p></div><span class="journey-arrow">↗</span></article></div></section>
+
+    <section id="contact" class="section-shell section-block contact-section"><div class="contact-panel reveal"><div class="contact-decoration">MS<span>.</span></div><p class="eyebrow">05 / YOUR IDEA STARTS HERE</p><h2>Let’s build something<br><span class="gold-text">worth remembering.</span></h2><p class="section-intro">Have an idea, collaboration, or opportunity? Send a message and let’s talk about it.</p><div class="contact-details"><a href="mailto:moheensulehria@gmail.com"><span>EMAIL</span><strong>moheensulehria@gmail.com</strong><i>↗</i></a><a href="https://github.com/Moheensulehria" target="_blank" rel="noopener noreferrer"><span>GITHUB</span><strong>github.com/Moheensulehria</strong><i>↗</i></a><a href="https://www.linkedin.com/in/moheen-sulehria-480338405/" target="_blank" rel="noopener noreferrer"><span>LINKEDIN</span><strong>Connect professionally</strong><i>↗</i></a></div><form id="contact-form" class="contact-form"><div class="form-row"><label>Your name<input name="name" required maxlength="100" placeholder="Name"></label><label>Your email<input name="email" type="email" required maxlength="200" placeholder="you@example.com"></label></div><label>What would you like to discuss?<textarea name="message" required rows="4" maxlength="3000" placeholder="Tell me a little about your idea…"></textarea></label><button class="button button-gold" type="submit">Prepare message <span>↗</span></button><p class="form-note">This form opens your email app with a prepared message; it does not silently send or store your information.</p></form></div></section>
+  </main>
+  <footer class="site-footer"><a class="footer-brand" href="#home">MOHEEN SULEHRIA<span>.</span></a><p>Built with curiosity and attention to detail.</p><div><a href="https://github.com/Moheensulehria" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/moheen-sulehria-480338405/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="admin.html" class="admin-link">Admin ↗</a></div><small>© <span id="year"></span> Moheen Sulehria. All rights reserved.</small></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
